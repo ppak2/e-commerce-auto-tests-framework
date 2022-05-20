@@ -1,0 +1,27 @@
+[
+  {
+    "name": "INFRASTRUCTURE PROBLEMS: Current Appium/Mobile device version does not support these user actions",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*Appium error: An unknown server-side error occurred while processing the command.*"
+  },
+  {
+    "name": "INFRASTRUCTURE PROBLEMS: Current Appium/Mobile device version does not support these user actions",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*Appium error: Method is not implemented.*"
+  },
+  {
+    "name": "INFRASTRUCTURE PROBLEMS: Current Appium/Mobile device version does not support these user actions",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*Appium error: Method has not yet been implemented.*"
+  },
+  {
+    "name": "INFRASTRUCTURE PROBLEMS: BrowserStack failed to create mobile device session. Restart is needed",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*Session not started or terminated (WARNING: The server did not provide any stacktrace information).*"
+  },
+  {
+    "name": "TEST FAILURE: This test should be marked as red. Possible Application defect",
+    "matchedStatuses": ["broken"],
+    "traceRegex": ".*NoSuchElementException.*"
+  }
+]

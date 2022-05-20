@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Jenkins Grid suite" parallel="tests" thread-count="2" verbose="2">
+
+    <parameter name="hubUrl" value="${hubUrl}"/>
+    <parameter name="url" value="${url}" />
+
+    <!--    <parameter name="repechromeat" value="${repeat}"/>-->
+
+    <test name="I Test">
+        <!-- - -->
+        <!-- - -->
+        <!-- - -->
+        <parameter name="browser" value="chrome" />
+        <parameter name="platform" value="linux" />
+        <!--<parameter name="device" value="Google Pixel 2" />-->
+        <!-- - -->
+        <!--<parameter name="browser" value="safari mobile" />-->
+        <!--<parameter name="platform" value="ios" />-->
+        <!--<parameter name="device" value="iPhone X" />-->
+        <!-- - -->
+        <classes>
+            <class name="experiment.GridTest" />
+        </classes>
+    </test>
+
+    <test name="II Test">
+        <!-- - -->
+        <!-- - -->
+        <!-- - -->
+        <parameter name="browser" value="chrome" />
+        <parameter name="platform" value="linux" />
+        <!--<parameter name="device" value="Google Pixel 2" />-->
+        <!-- - -->
+        <!--<parameter name="browser" value="safari mobile" />-->
+        <!--<parameter name="platform" value="ios" />-->
+        <!--<parameter name="device" value="iPhone X" />-->
+        <!-- - -->
+        <classes>
+            <class name="experiment.GridTestSingle" />
+        </classes>
+    </test>
+</suite>

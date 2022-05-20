@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ThankYouPageTests" verbose="3" parallel="tests" thread-count="3">
+
+    <parameter name="url" value="${url}"/>
+    <parameter name="hubUrl" value="${hubUrl}"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="platform" value="linux"/>
+    <parameter name="deliveryItemA" value="661986"/>
+    <parameter name="deliveryItemB" value="535524"/>
+    <parameter name="zip" value="21121"/>
+
+    <test name="PaidDeliveryTest">
+
+        <classes>
+            <class name="ThankYouPageTests.PaidDelivery"/>
+        </classes>
+    </test>
+
+
+    <test name="DHLTest">
+
+        <classes>
+            <class name="ThankYouPageTests.DHLDelivery"/>
+        </classes>
+    </test>
+
+    <test name="CombinationServicesTest">
+
+        <classes>
+            <class name="ThankYouPageTests.CombinationServices"/>
+        </classes>
+    </test>
+
+
+</suite>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sandbox suite" parallel="tests" thread-count="2" verbose="2">
+
+    <test name="I PrivateWorkflow">
+        <!-- - -->
+        <parameter name="url" value="http://wegot-se-438.trademax-test.com/" />
+        <!-- - -->
+        <!--<parameter name="browser" value="chrome" />-->
+        <!--<parameter name="platform" value="mac" />-->
+        <!-- - -->
+        <parameter name="browser" value="chromium" />
+        <parameter name="platform" value="android" />
+        <parameter name="device" value="Google Pixel 2" />
+        <!-- - -->
+        <!--<parameter name="browser" value="safari mobile" />-->
+        <!--<parameter name="platform" value="ios" />-->
+        <!--<parameter name="device" value="iPhone X" />-->
+        <!-- - -->
+        <classes>
+            <class name="_New.Draft" />
+        </classes>
+    </test>
+
+    <test name="II CompanyWorkflow">
+        <!-- - -->
+        <parameter name="url" value="http://wegot-se-438.trademax-test.com/" />
+        <!-- - -->
+        <!--<parameter name="browser" value="safari mobile" />-->
+        <!--<parameter name="platform" value="ios" />-->
+        <!--<parameter name="device" value="iPhone XR" />-->
+        <!-- - -->
+        <!--<parameter name="browser" value="chromium" />-->
+        <!--<parameter name="platform" value="android" />-->
+        <!--<parameter name="device" value="Google Pixel 2" />-->
+        <!-- - -->
+        <parameter name="browser" value="chrome" />
+        <parameter name="platform" value="windows" />
+        <!-- - -->
+        <classes>
+            <class name="_New.Draft" />
+        </classes>
+    </test>
+</suite>

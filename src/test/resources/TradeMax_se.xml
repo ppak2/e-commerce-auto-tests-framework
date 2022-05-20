@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TradeMax.se" verbose="2" parallel="tests" thread-count="2">
+
+    <!--<parameter name="url" value="https://trademax-se-blue.trademax-test.com"/>-->
+    <parameter name="url" value="${url}"/>
+    <parameter name="item" value="Soffor"/>
+    <parameter name="address" value="Universitetsvägen 2B"/>
+    <parameter name="postcode" value="21532"/>
+    <parameter name="phone" value="0722004549"/>
+    <parameter name="ssn" value="5567809685"/>
+
+    <test name="TM_SE NewCheckout Private Chrome">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="platform" value="mac"/>
+        <!--<parameter name="browser" value="${browser}"/>-->
+        <!--<parameter name="platform" value="${platform}"/>-->
+        <parameter name="browserVersion" value="73"/>
+
+        <classes>
+            <class name="_New.PrivateWorkflow"/>
+        </classes>
+    </test>
+
+    <!--<test name="TM_SE NewCheckout Company Chrome">-->
+        <!--<parameter name="browser" value="chrome"/>-->
+        <!--<parameter name="platform" value="mac"/>-->
+        <!--<parameter name="browserVersion" value="71"/>-->
+
+        <!--<classes>-->
+            <!--<class name="NewCheckoutTests.CompanyWorkflow"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="TM_SE NewCheckout Private Android">-->
+        <!--<parameter name="browser" value="chromium"/>-->
+        <!--<parameter name="platform" value="android"/>-->
+        <!--<parameter name="device" value="Samsung Galaxy S7"/>-->
+
+        <!--<classes>-->
+            <!--<class name="NewCheckoutTests.PrivateWorkflowMobile"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="TM_SE NewCheckout Company Android">-->
+        <!--<parameter name="browser" value="chromium"/>-->
+        <!--<parameter name="platform" value="android"/>-->
+        <!--<parameter name="device" value="Samsung Galaxy S8"/>-->
+
+        <!--<classes>-->
+            <!--<class name="NewCheckoutTests.CompanyWorkflowMobile"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <test name="TM_SE NewCheckout Company IOs">
+        <parameter name="browser" value="safari mobile"/>
+        <parameter name="platform" value="ios"/>
+        <parameter name="device" value="iPhone 8"/>
+
+        <classes>
+            <class name="_New.CompanyWorkflow"/>
+        </classes>
+    </test>
+
+    <!--<test name="TM_SE NewCheckout Company IOs">-->
+        <!--<parameter name="browser" value="safari_mobile"/>-->
+        <!--<parameter name="platform" value="ios"/>-->
+        <!--<parameter name="device" value="iPhone 8"/>-->
+
+        <!--<classes>-->
+            <!--<class name="NewCheckoutTests.CompanyWorkflowMobile"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="TM_SE SubmitOrderLoad">-->
+        <!--<parameter name="browser" value="chrome"/>-->
+        <!--<parameter name="platform" value="mac"/>-->
+        <!--<parameter name="browserVersion" value="73"/>-->
+        <!--<parameter name="testRepeat" value="100"/>-->
+
+        <!--<classes>-->
+            <!--<class name="ABTests.SubmitOrderLoadTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="MiniCart Chrome Mac tests">-->
+        <!--<parameter name="browser" value="chrome"/>-->
+        <!--<parameter name="platform" value="mac"/>-->
+        <!--<parameter name="browserVersion" value="71"/>-->
+
+        <!--<classes>-->
+            <!--<class name="MiniCartTests.MiniCartWidget"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="MiniCart IE tests">-->
+        <!--<parameter name="browser" value="ie"/>-->
+        <!--<parameter name="platform" value="windows"/>-->
+        <!--<parameter name="browserVersion" value="11"/>-->
+
+        <!--<classes>-->
+            <!--<class name="MiniCartTests.MiniCartWidget"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--&lt;!&ndash;<test name="PDP Colors IE tests">&ndash;&gt;-->
+        <!--&lt;!&ndash;<parameter name="browser" value="ie"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<parameter name="platform" value="windows"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<parameter name="browserVersion" value="11"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<parameter name="color1" value="#ff0060"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<parameter name="color2" value="#00a5c4"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<parameter name="color3" value="#ffffff"/>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<classes>&ndash;&gt;-->
+            <!--&lt;!&ndash;<class name="ColorTests.ValidatePDPColorsTM_CH"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;</classes>&ndash;&gt;-->
+    <!--&lt;!&ndash;</test>&ndash;&gt;-->
+
+    <!--<test name="PDP Colors IPhone tests">-->
+        <!--<parameter name="browser" value="safari_mobile"/>-->
+        <!--<parameter name="platform" value="ios"/>-->
+        <!--<parameter name="device" value="iPhone 7"/>-->
+        <!--<parameter name="color1" value="#ff0060"/>-->
+        <!--<parameter name="color2" value="#00a5c4"/>-->
+        <!--<parameter name="color3" value="#ffffff"/>-->
+
+        <!--<classes>-->
+            <!--<class name="ColorTests.Mobile.ValidatePDPColorsTM_CH"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--&lt;!&ndash;<test name="PDP Colors Android tests">&ndash;&gt;-->
+        <!--&lt;!&ndash;<parameter name="browser" value="chromium"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<parameter name="platform" value="android"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<parameter name="device" value="Samsung Galaxy S7"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<parameter name="color1" value="#ff0060"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<parameter name="color2" value="#00a5c4"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<parameter name="color3" value="#ffffff"/>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<classes>&ndash;&gt;-->
+            <!--&lt;!&ndash;<class name="ColorTests.Mobile.ValidatePDPColorsTM_CH"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;</classes>&ndash;&gt;-->
+    <!--&lt;!&ndash;</test>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<test name="MonitorButtonUI Chrome Mac tests">&ndash;&gt;-->
+        <!--&lt;!&ndash;<parameter name="browser" value="chrome"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<parameter name="platform" value="mac"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<parameter name="browserVersion" value="71"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<parameter name="item" value="646273"/>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<classes>&ndash;&gt;-->
+            <!--&lt;!&ndash;<class name="MonitorButtonUI.MonitorButtonUI"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;</classes>&ndash;&gt;-->
+    <!--&lt;!&ndash;</test>&ndash;&gt;-->
+
+    <!--<test name="Samples Chrome Win tests">-->
+        <!--<parameter name="browser" value="chrome"/>-->
+        <!--<parameter name="platform" value="windows"/>-->
+        <!--<parameter name="browserVersion" value="71"/>-->
+        <!--<parameter name="item" value="535433"/>-->
+
+        <!--<classes>-->
+            <!--<class name="SamplesTests.SamplesTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Samples Android tests">-->
+        <!--<parameter name="browser" value="chromium"/>-->
+        <!--<parameter name="platform" value="android"/>-->
+        <!--<parameter name="device" value="Samsung Galaxy S8"/>-->
+        <!--<parameter name="item" value="535433"/>-->
+
+        <!--<classes>-->
+            <!--<class name="SamplesTests.Mobile.SamplesTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--&lt;!&ndash;<test name="Samples IPhone tests">&ndash;&gt;-->
+    <!--&lt;!&ndash;<parameter name="browser" value="safari_mobile"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<parameter name="platform" value="ios"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<parameter name="device" value="iPhone 8"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<parameter name="item" value="535433"/>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<classes>&ndash;&gt;-->
+    <!--&lt;!&ndash;<class name="SamplesTests.Mobile.SamplesTest"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;</classes>&ndash;&gt;-->
+    <!--&lt;!&ndash;</test>&ndash;&gt;-->
+
+</suite>

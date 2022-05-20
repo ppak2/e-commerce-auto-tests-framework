@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="NewRelicTest suite" verbose="2">
+
+    <parameter name="url" value="${url}" />
+
+
+    <!--<test name="Default User agent">-->
+        <!--&lt;!&ndash; - &ndash;&gt;-->
+        <!--<parameter name="browser" value="chrome" />-->
+        <!--<parameter name="platform" value="windows" />-->
+        <!--&lt;!&ndash; - &ndash;&gt;-->
+        <!--<classes>-->
+            <!--<class name="NewRelicTest.DefaultUserAgentTest" />-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <test name="GoogleBot agent">
+        <!-- - -->
+        <parameter name="browser" value="chrome" />
+        <parameter name="platform" value="mac" />
+        <parameter name="userAgent" value="--user-agent=Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"/>
+        <!-- - -->
+        <classes>
+            <class name="NewRelicTest.GoogleBotUserAgentTest" />
+        </classes>
+    </test>
+
+</suite>

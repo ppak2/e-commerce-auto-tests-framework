@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Kodin1" verbose="2" parallel="tests" thread-count="2">
+
+    <!--value="https://kodin1-com-blue.trademax-test.com"-->
+    <parameter name="url" value="${url}"/>
+    <!--<parameter name="url" value="https://kodin1-com-green.trademax-test.com"/>-->
+    <parameter name="item" value="Sohvat"/>
+    <parameter name="address" value="Aleksanterinkatu 17"/>
+    <parameter name="postcode" value="00370"/>
+    <parameter name="phone" value="09655783"/>
+    <parameter name="ssn" value="15055514"/>
+
+    <test name="Kodin NewCheckout Private Chrome">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="platform" value="mac"/>
+        <parameter name="browserVersion" value="73"/>
+
+        <classes>
+            <class name="_New.PrivateWorkflow"/>
+        </classes>
+    </test>
+
+    <!--<test name="Kodin NewCheckout Company Chrome">-->
+        <!--<parameter name="browser" value="chrome"/>-->
+        <!--<parameter name="platform" value="mac"/>-->
+        <!--<parameter name="browserVersion" value="71"/>-->
+
+        <!--<classes>-->
+            <!--<class name="NewCheckoutTests.CompanyWorkflow"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Kodin NewCheckout Private Android">-->
+        <!--<parameter name="browser" value="chromium"/>-->
+        <!--<parameter name="platform" value="android"/>-->
+        <!--<parameter name="device" value="Samsung Galaxy S7"/>-->
+
+        <!--<classes>-->
+            <!--<class name="NewCheckoutTests.PrivateWorkflowMobile"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Kodin NewCheckout Company Android">-->
+        <!--<parameter name="browser" value="chromium"/>-->
+        <!--<parameter name="platform" value="android"/>-->
+        <!--<parameter name="device" value="Samsung Galaxy S8"/>-->
+
+        <!--<classes>-->
+            <!--<class name="NewCheckoutTests.CompanyWorkflowMobile"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <test name="Kodin NewCheckout Company IOs">
+        <parameter name="browser" value="safari mobile"/>
+        <parameter name="platform" value="ios"/>
+        <parameter name="device" value="iPhone 8"/>
+
+        <classes>
+            <class name="_New.CompanyWorkflow"/>
+        </classes>
+    </test>
+
+    <!--<test name="Kodin NewCheckout Company IOs">-->
+        <!--<parameter name="browser" value="safari_mobile"/>-->
+        <!--<parameter name="platform" value="ios"/>-->
+        <!--<parameter name="device" value="iPhone 7"/>-->
+
+        <!--<classes>-->
+            <!--<class name="NewCheckoutTests.CompanyWorkflowMobile"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Kodin SubmitOrderLoad">-->
+        <!--<parameter name="browser" value="chrome"/>-->
+        <!--<parameter name="platform" value="mac"/>-->
+        <!--<parameter name="browserVersion" value="73"/>-->
+        <!--<parameter name="testRepeat" value="100"/>-->
+
+        <!--<classes>-->
+            <!--<class name="ABTests.SubmitOrderLoadTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="MiniCart Safari Mac tests">-->
+        <!--<parameter name="browser" value="safari"/>-->
+        <!--<parameter name="platform" value="mac"/>-->
+        <!--<parameter name="browserVersion" value="11.1"/>-->
+
+        <!--<classes>-->
+            <!--<class name="MiniCartTests.MiniCartWidget"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="MiniCart IE tests">-->
+        <!--<parameter name="browser" value="ie"/>-->
+        <!--<parameter name="platform" value="windows"/>-->
+        <!--<parameter name="browserVersion" value="11"/>-->
+
+        <!--<classes>-->
+            <!--<class name="MiniCartTests.MiniCartWidget"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="PDP Colors IE tests">-->
+        <!--<parameter name="browser" value="ie"/>-->
+        <!--<parameter name="platform" value="windows"/>-->
+        <!--<parameter name="browserVersion" value="11"/>-->
+        <!--<parameter name="color1" value="#48a6a5"/>-->
+        <!--<parameter name="color2" value="#457ab3"/>-->
+        <!--<parameter name="color3" value="#f9ed38"/>-->
+        <!--<parameter name="color4" value="#1d1d1b"/>-->
+
+        <!--<classes>-->
+            <!--<class name="ColorTests.ValidatePDPColorsKodin"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="PDP Colors IPhone tests">-->
+        <!--<parameter name="browser" value="safari_mobile"/>-->
+        <!--<parameter name="platform" value="ios"/>-->
+        <!--<parameter name="device" value="iPhone 7"/>-->
+        <!--<parameter name="color1" value="#48a6a5"/>-->
+        <!--<parameter name="color2" value="#457ab3"/>-->
+        <!--<parameter name="color3" value="#f9ed38"/>-->
+        <!--<parameter name="color4" value="#1d1d1b"/>-->
+
+        <!--<classes>-->
+            <!--<class name="ColorTests.Mobile.ValidatePDPColorsKodin"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="PDP Colors Android tests">-->
+        <!--<parameter name="browser" value="chromium"/>-->
+        <!--<parameter name="platform" value="android"/>-->
+        <!--<parameter name="device" value="Samsung Galaxy S7"/>-->
+        <!--<parameter name="color1" value="#48a6a5"/>-->
+        <!--<parameter name="color2" value="#457ab3"/>-->
+        <!--<parameter name="color3" value="#f9ed38"/>-->
+        <!--<parameter name="color4" value="#1d1d1b"/>-->
+
+        <!--<classes>-->
+            <!--<class name="ColorTests.Mobile.ValidatePDPColorsKodin"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="MonitorButtonUI Chrome Mac tests">-->
+        <!--<parameter name="browser" value="chrome"/>-->
+        <!--<parameter name="platform" value="mac"/>-->
+        <!--<parameter name="browserVersion" value="71"/>-->
+        <!--<parameter name="item" value="646273"/>-->
+
+        <!--<classes>-->
+            <!--<class name="MonitorButtonUI.MonitorButtonUI"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Samples Chrome Win tests">-->
+        <!--<parameter name="browser" value="chrome"/>-->
+        <!--<parameter name="platform" value="windows"/>-->
+        <!--<parameter name="browserVersion" value="71"/>-->
+        <!--<parameter name="item" value="535433"/>-->
+
+        <!--<classes>-->
+            <!--<class name="SamplesTests.SamplesTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Samples Android tests">-->
+        <!--<parameter name="browser" value="chromium"/>-->
+        <!--<parameter name="platform" value="android"/>-->
+        <!--<parameter name="device" value="Samsung Galaxy S8"/>-->
+        <!--<parameter name="item" value="535433"/>-->
+
+        <!--<classes>-->
+            <!--<class name="SamplesTests.Mobile.SamplesTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Samples IPhone tests">-->
+    <!--<parameter name="browser" value="safari_mobile"/>-->
+    <!--<parameter name="platform" value="ios"/>-->
+    <!--<parameter name="device" value="iPhone 8"/>-->
+    <!--<parameter name="item" value="535433"/>-->
+
+    <!--<classes>-->
+    <!--<class name="SamplesTests.Mobile.SamplesTest"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+</suite>

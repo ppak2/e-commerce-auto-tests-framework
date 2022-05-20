@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="AB_Test Suite" verbose="2" parallel="tests" thread-count="3">
+
+    <parameter name="url" value="${url}"/>
+    <parameter name="hubUrl" value="${hubUrl}"/>
+    <parameter name="testRepeat" value="${testRepeat}"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="platform" value="linux"/>
+
+    <test name="A/B Test">
+
+        <classes>
+            <class name="ABTests.SubmitOrderLoadTest"/>
+        </classes>
+    </test>
+
+<!--    <test name="A/B Test 2-nd thread">-->
+
+<!--        <classes>-->
+<!--            <class name="ABTests.SubmitOrderLoadTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="A/B Test 3-rd thread">-->
+
+<!--        <classes>-->
+<!--            <class name="ABTests.SubmitOrderLoadTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>
